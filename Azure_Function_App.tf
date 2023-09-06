@@ -44,6 +44,7 @@ resource "azurerm_app_service_source_control" "Source_Code" {
 
 resource "azurerm_app_service_source_control_token" "token" {
   type  = "GitHub"
+  token = var.PAT
   depends_on = [ azurerm_resource_group.PolisApp_Resource_Group ]
 }
 
