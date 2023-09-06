@@ -44,7 +44,6 @@ resource "azurerm_app_service_source_control" "Source_Code" {
 
 resource "azurerm_app_service_source_control_token" "token" {
   type  = "GitHub"
-  token = "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"
   depends_on = [ azurerm_resource_group.PolisApp_Resource_Group ]
 }
 
