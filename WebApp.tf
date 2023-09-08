@@ -57,7 +57,7 @@ resource "azurerm_linux_web_app" "webapp_me" {
 
 resource "azurerm_app_service_source_control" "Production_Code" {
   app_id   = azurerm_linux_web_app.webapp_me.id
-  repo_url = "https://github.com/Labb3PubliceringSnitches/PolisApp.git"
+  repo_url = "https://github.com/IamFrampt/PolisApp_Labb2.git"
   branch   = "master"
   depends_on = [ azurerm_linux_web_app.webapp_me,
    azurerm_app_service_source_control_token.token]
